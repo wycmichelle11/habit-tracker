@@ -66,9 +66,11 @@ h1 {
     margin-right: 12px;
 }
 
+
 .habits input + label span {
     font-weight: 400;
     font-size: 0.75rem;
+    padding: 0px 100px 0px 0px;
     
 }
 
@@ -78,12 +80,14 @@ h1 {
 }
 
 .habits button {
-    padding-left: 30px;
-    background: none;
+    padding: 5px;
+    background: white;
     margin: 5px;
     outline: 0;
     border: 0;
-    border-radius: 10px
+    border-radius: 10px;
+    text-align: center;
+    font-family: Raleway;
 }
 
 .add-habit {
@@ -104,9 +108,21 @@ h1 {
     border-radius: 100px;
 }
 
+.add-habit input::placeholder {
+    font-family: Raleway;
+}
+
+.add-habit input[value] {
+    border-radius: 100px;
+    font-family: Raleway;
+    background-color: white;
+}
+
+
 .add-habit select {
     border-radius: 10px;
     border: none;
+    font-family: Raleway;
 }
 
 
