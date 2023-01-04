@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: Raleway;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: whitesmoke;
+}
+
+.container {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+/* Style for List of Habits*/
+.habits {
+    text-align: left;
+    list-style: none;
+}
+
+.habits li {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.habits label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.habits input {
+    margin-right: 12px;
+    display: none;
+}
+
+.habits input + label:before {
+    content: "+";
+    margin-right: 12px;
+}
+
+.habits input + label span {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.habits input:checked + label {
+    text-decoration: line-through;
+    color: lightgrey;
+}
+
+.habits button {
+    padding-left: 30px;
+    background: none;
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px
+}
+
+.add-habit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.add-habit input {
+    padding: 10px;
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    border-radius: 100px;
+}
+
+.add-habit select {
+    border-radius: 10px;
+    border: none;
+}
+
+
+.frequency {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
