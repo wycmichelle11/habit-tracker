@@ -62,7 +62,7 @@ h1 {
 }
 
 .habits input + label:before {
-    content: "+";
+    content:icon;
     margin-right: 12px;
 }
 
